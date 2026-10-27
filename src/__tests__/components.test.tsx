@@ -17,3 +17,4 @@ describe("ChaseHorseLogo Component", () => {
     expect(logoImg.className).toContain("invert");
   });
 });
+

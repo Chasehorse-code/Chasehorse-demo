@@ -10,12 +10,14 @@ import { useChaseHorseStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
-  { label: "How it works", href: "/how-it-works" },
-  { label: "Businesses", href: "/businesses" },
-  { label: "Field workers", href: "/field-workers" },
-  { label: "Verification", href: "/verification" },
-  { label: "Rewards", href: "/rewards" },
+  { label: "Platform", href: "/platform" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Live Market", href: "/live-market" },
+  { label: "Services", href: "/services" },
   { label: "Operations", href: "/operations" },
+  { label: "Field Workers", href: "/field-workers" },
+  { label: "Discover", href: "/discover" },
+  { label: "Gear Shop", href: "/merchandise" },
 ];
 
 export function SiteHeader() {
@@ -102,6 +104,13 @@ export function SiteHeader() {
                 />
                 {isDemoMode ? "Demo Mode" : "Connected API"}
               </button>
+
+              <Link
+                href="/get-a-quote"
+                className="hidden xl:inline-flex items-center px-3 py-1.5 text-xs font-mono font-medium text-[#111111] hover:text-[#F45116] border border-[#D8D4CB] rounded-lg transition-colors"
+              >
+                Get a Quote
+              </Link>
 
               <Link
                 href="/sign-in"

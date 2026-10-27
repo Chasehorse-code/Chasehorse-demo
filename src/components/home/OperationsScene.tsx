@@ -195,6 +195,7 @@ export function OperationsScene() {
               src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=500&auto=format&fit=crop&q=80"
               alt="Evidence photo beverage shelf"
               fill
+              sizes="(max-width: 768px) 100vw, 300px"
               className="object-cover"
             />
             <div className="absolute bottom-1 right-1 bg-black/75 text-white text-[9px] font-mono px-1.5 py-0.5 rounded">

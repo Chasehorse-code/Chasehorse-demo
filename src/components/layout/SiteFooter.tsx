@@ -32,12 +32,12 @@ export function SiteFooter() {
         </div>
 
         {/* Main Footer Links & Brand info */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8 pb-12 border-b border-white/10">
           {/* Brand Column */}
           <div className="md:col-span-2">
             <ChaseHorseLogo variant="light" size="md" />
             <p className="mt-4 text-xs sm:text-sm text-white/60 max-w-sm leading-relaxed">
-              Growth Enabling Logiworkx Partner. ChaseHorse connects businesses with verified nearby field workers across India with geofenced check-ins, geotagged evidence, and complete operational audit trails.
+              Growth Enabling Logiworkx Partner (G.E.L.P.). Connecting enterprise supply chains, local commerce, and verified field agents across India with precision GPS tracking, AI verification, and real-time operations command.
             </p>
             <div className="mt-6 flex flex-col gap-2 text-xs text-white/50">
               <div className="flex items-center gap-2">
@@ -48,17 +48,48 @@ export function SiteFooter() {
                 <Mail className="w-3.5 h-3.5 text-[#F45116]" />
                 <span>operations@chasehorse.com</span>
               </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5 text-[#F45116]" />
+                <span>+91 80 4920 1800 / Toll Free: 1800-CHASE-LOGI</span>
+              </div>
             </div>
           </div>
 
-          {/* Navigation Columns */}
+          {/* Platform & Solutions */}
           <div>
             <h4 className="text-xs font-mono uppercase tracking-wider text-white/40 mb-4 font-semibold">
-              Platform
+              G.E.L.P. Platform
             </h4>
             <ul className="space-y-2.5 text-xs text-white/70">
               <li>
-                <Link href="/how-it-works" className="hover:text-white transition-colors">How it works</Link>
+                <Link href="/platform" className="hover:text-white transition-colors">Platform Architecture</Link>
+              </li>
+              <li>
+                <Link href="/solutions" className="hover:text-white transition-colors">Industry Solutions</Link>
+              </li>
+              <li>
+                <Link href="/live-market" className="hover:text-white transition-colors">Live Freight Market</Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-white transition-colors">Services & SLA Matrix</Link>
+              </li>
+              <li>
+                <Link href="/get-a-quote" className="hover:text-[#F45116] text-[#F45116] font-medium transition-colors">Instant Rate Quote →</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Operations & Verification */}
+          <div>
+            <h4 className="text-xs font-mono uppercase tracking-wider text-white/40 mb-4 font-semibold">
+              Field Execution
+            </h4>
+            <ul className="space-y-2.5 text-xs text-white/70">
+              <li>
+                <Link href="/operations" className="hover:text-white transition-colors">Operations Command</Link>
+              </li>
+              <li>
+                <Link href="/how-it-works" className="hover:text-white transition-colors">How It Works</Link>
               </li>
               <li>
                 <Link href="/businesses" className="hover:text-white transition-colors">For Businesses</Link>
@@ -67,7 +98,7 @@ export function SiteFooter() {
                 <Link href="/field-workers" className="hover:text-white transition-colors">For Field Workers</Link>
               </li>
               <li>
-                <Link href="/verification" className="hover:text-white transition-colors">Verification System</Link>
+                <Link href="/verification" className="hover:text-white transition-colors">Multi-Layer Verification</Link>
               </li>
               <li>
                 <Link href="/rewards" className="hover:text-white transition-colors">Rewards & Payouts</Link>
@@ -75,22 +106,23 @@ export function SiteFooter() {
             </ul>
           </div>
 
+          {/* Ecosystem & Gear */}
           <div>
             <h4 className="text-xs font-mono uppercase tracking-wider text-white/40 mb-4 font-semibold">
-              Operations
+              Ecosystem
             </h4>
             <ul className="space-y-2.5 text-xs text-white/70">
               <li>
-                <Link href="/operations" className="hover:text-white transition-colors">Operations Board</Link>
+                <Link href="/discover" className="hover:text-white transition-colors">Discover & Milestones</Link>
               </li>
               <li>
-                <Link href="/tasks/new" className="hover:text-white transition-colors">Post Field Task</Link>
+                <Link href="/careers" className="hover:text-white transition-colors">Careers (Hiring)</Link>
               </li>
               <li>
-                <Link href="/tasks/CH-24817" className="hover:text-white transition-colors">Live Task Inspection</Link>
+                <Link href="/merchandise" className="hover:text-white transition-colors">Field Gear Shop</Link>
               </li>
               <li>
-                <Link href="/operations/review/CH-24817" className="hover:text-white transition-colors">Review Queue</Link>
+                <Link href="/tasks/new" className="hover:text-white transition-colors">Post a Field Task</Link>
               </li>
               <li>
                 <Link href="/faq" className="hover:text-white transition-colors">Help Center & FAQ</Link>
@@ -98,25 +130,26 @@ export function SiteFooter() {
             </ul>
           </div>
 
+          {/* Trust & Dispatch */}
           <div>
             <h4 className="text-xs font-mono uppercase tracking-wider text-white/40 mb-4 font-semibold">
               Trust & Legal
             </h4>
             <ul className="space-y-2.5 text-xs text-white/70">
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">Contact Support</Link>
+                <Link href="/contact" className="hover:text-white transition-colors">Enterprise Dispatch</Link>
               </li>
               <li>
-                <span className="text-white/40">Privacy Policy (India DPDPA)</span>
+                <span className="text-white/40">ISO 9001:2015 Logistics</span>
+              </li>
+              <li>
+                <span className="text-white/40">DPDPA India Privacy</span>
               </li>
               <li>
                 <span className="text-white/40">Terms of Operations</span>
               </li>
               <li>
-                <span className="text-white/40">Field Worker Code of Conduct</span>
-              </li>
-              <li>
-                <span className="text-white/40">Security & Tamper Proofing</span>
+                <span className="text-white/40">Security & Anti-Spoof</span>
               </li>
             </ul>
           </div>
