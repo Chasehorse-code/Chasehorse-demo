@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #111111;
+  --ivory: #F4F2EC;
+  --ivory-soft: #E9E6DE;
+  --ivory-border: #D8D4CB;
+  --ch-orange: #F45116;
+  --ch-orange-hover: #D9430D;
+  --ch-muted: #62666D;
+  --ch-green: #0B8059;
+  --ch-green-light: #E7F6F0;
+  --ch-amber: #E9AA36;
+  --ch-amber-light: #FDF6E8;
+  --ch-blue: #3566D6;
+  --ch-blue-light: #EBF1FD;
+  --ch-red: #C83B36;
+  --ch-red-light: #FAEBEA;
+  
+  --background: var(--ivory);
+  --foreground: var(--ink);
+}
+
+@theme {
+  --color-ink: var(--ink);
+  --color-ivory: var(--ivory);
+  --color-ivory-soft: var(--ivory-soft);
+  --color-ivory-border: var(--ivory-border);
+  --color-ch-orange: var(--ch-orange);
+  --color-ch-orange-hover: var(--ch-orange-hover);
+  --color-ch-muted: var(--ch-muted);
+  --color-ch-green: var(--ch-green);
+  --color-ch-green-light: var(--ch-green-light);
+  --color-ch-amber: var(--ch-amber);
+  --color-ch-amber-light: var(--ch-amber-light);
+  --color-ch-blue: var(--ch-blue);
+  --color-ch-blue-light: var(--ch-blue-light);
+  --color-ch-red: var(--ch-red);
+  --color-ch-red-light: var(--ch-red-light);
+
+  --font-heading: var(--font-space-grotesk), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+.font-mono-numbers {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" on, "zero" on;
+}
+
+/* Operational Map Grid Patterns */
+.bg-grid-pattern {
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(216, 212, 203, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(216, 212, 203, 0.45) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(17, 17, 17, 0.12) 1px, transparent 1px);
+}
+
+/* Glass & Panel Treatments */
+.panel-card {
+  background: #FFFFFF;
+  border: 1px solid var(--ivory-border);
+  box-shadow: 0 1px 3px rgba(17, 17, 17, 0.04), 0 8px 24px -4px rgba(17, 17, 17, 0.03);
+}
+
+.panel-card-soft {
+  background: var(--ivory-soft);
+  border: 1px solid var(--ivory-border);
+}
+
+/* Light beam sweep animation */
+@keyframes light-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-light-sweep {
+  animation: light-sweep 2.2s ease-in-out infinite;
+}
+
+/* Pulse radius animation */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Hide scrollbar for clean horizontal review tracks */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
